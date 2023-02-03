@@ -9,6 +9,18 @@ function setup() {
     //sets the position of the current camera in a 3D sketch. 
     camera(800,-600,800,0,0,0,0,1,0);
     angleMode(DEGREES);
+
+    let value = createSpan('Camera:');
+    value.position(10, 850);
+
+    let value1 = createSpan('R value:');
+    value1.position(10, 890);
+
+    let value2 = createSpan('G value:');
+    value2.position(10, 930);
+
+    let value3 = createSpan('B value:');
+    value3.position(10, 970);
     
     confLocs = [];
     confTheta = [];
@@ -22,19 +34,19 @@ function setup() {
     }
 
     slider = createSlider(0, 1000, 600);
-    slider.position(50, 850);
+    slider.position(80, 850);
     slider.style('width', '80px');
 
     slider1 = createSlider(0, 255, 198);
-    slider1.position(50, 890);
+    slider1.position(80, 890);
     slider1.style('width', '80px');
 
     slider2 = createSlider(0, 255, 207);
-    slider2.position(50, 930);
+    slider2.position(80, 930);
     slider2.style('width', '80px');
 
     slider3 = createSlider(0, 255, 243);
-    slider3.position(50, 970);
+    slider3.position(80, 970);
     slider3.style('width', '80px');
 
 }
