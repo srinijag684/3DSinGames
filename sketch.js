@@ -7,7 +7,6 @@ var confTheta;
 
 let slider;
 
-
 function setup() {
     createCanvas(900, 800, WEBGL);
     //sets the position of the current camera in a 3D sketch. 
@@ -17,13 +16,13 @@ function setup() {
     let value = createSpan('Camera:');
     value.position(10, 850);
 
-    let value1 = createSpan('R value:');
+    let value1 = createSpan('B value:');
     value1.position(10, 890);
 
     let value2 = createSpan('G value:');
     value2.position(10, 930);
 
-    let value3 = createSpan('B value:');
+    let value3 = createSpan('R value:');
     value3.position(10, 970);
     
     confLocs = [];
